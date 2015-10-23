@@ -1,1 +1,1 @@
-# mingweisamuel.github.io
+# <http://www.mingweisamuel.com>
