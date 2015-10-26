@@ -31,16 +31,16 @@ scotchApp.config(function($routeProvider) {
 
 // create the controller and inject Angular's $scope
 scotchApp.controller('homeController', function($scope) {
-    $scope.age = (function() {
+    $scope.age = (function(birthDate) {
         var today = new Date();
-        var birthDate = new Date("1998/03/03");
+        var birthDate = new Date(birthDate);
         var age = today.getFullYear() - birthDate.getFullYear();
         var m = today.getMonth() - birthDate.getMonth();
         if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
             age--;
         }
         return age;
-    })();
+    })("1998/03/03");
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
 });
