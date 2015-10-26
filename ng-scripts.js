@@ -1,6 +1,7 @@
 var scotchApp = window.angular.module('scotchApp', ['ngRoute']);
 
 var tabs = {
+    "skills": "Skills",
     "achievements": "Achievements",
     "projects": "Projects",
     "photos": "Photo Gallery",
@@ -43,6 +44,10 @@ scotchApp.controller('homeController', function($scope) {
     })("1998/03/03");
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
+});
+
+scotchApp.controller('skillsController', function($scope) {
+   $scope.message = 'Skillz for Dayz'; 
 });
 
 scotchApp.controller('achievementsController', function($scope) {
