@@ -34,37 +34,34 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.min.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="ng-scripts.js"></script>
 </head>
 
 <body data-ng-controller="mainController">
-    <div>
-        <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <!-- title -->
-                <li class="name">
-                    <h1><a href="#/">Mingwei Samuel</a></h1>
-                </li>
-                <!-- mobile menu icon -->
-                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <!-- title -->
+            <li class="name">
+                <h1><a href="#/">Mingwei Samuel</a></h1>
+            </li>
+            <!-- mobile menu icon -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li ng-repeat="(key, value) in tabs"><a href="#/{{ key }}">{{ value }}</a></div>
             </ul>
-            <section class="top-bar-section">
-                <!-- Right Nav Section -->
-                <ul class="right">
-                    <li><a href="#/about">About</a></li>
-                    <li><a href="#/contact">Contact</a></li>
-                </ul>
 
-                <!-- Left Nav Section -->
-                <!--<ul class="left">
-                    <li><a href="#">Left Nav Button</a></li>
-                </ul>-->
-            </section>
-        </nav>
-    </div>
+            <!-- Left Nav Section -->
+            <!--<ul class="left">
+                <li><a href="#">Left Nav Button</a></li>
+            </ul>-->
+        </section>
+    </nav>
     
     <!-- main content container -->
-    <div id="main">
+    <div id="main" style="padding-top: 2em;">
         <div data-ng-view></div>
     </div>
 
