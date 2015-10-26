@@ -1,0 +1,21 @@
+{
+    "Programming": [
+        {
+            "name": "Java",
+            "description": "I am good at java",
+            "rating": 10
+        },
+        {
+            "name": "Python",
+            "description": "Python's ok",
+            "rating": 8
+        }
+    ],
+    "Music": [
+        {
+            "name": "Trumpet",
+            "description": "I play trumpet",
+            "rating": 9
+        }
+    ]
+}

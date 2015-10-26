@@ -1,34 +1,45 @@
 var scotchApp = window.angular.module('scotchApp', ['ngRoute']);
 
 var tabs = {
-    "skills": "Skills",
-    "achievements": "Achievements",
-    "projects": "Projects",
-    "photos": "Photo Gallery",
-    "contact": "Contact Me"
+    'projects': 'Projects',
+    'achievements': 'Achievements',
+    'skills': 'Skills',
+    'photos': 'Photo Gallery',
+    'contact': 'Contact Me'
 };
 
-scotchApp.controller('mainController', function($scope) {
+scotchApp.controller('mainController', function($scope, $location) {
     //base template, not on individual page
     $scope.tabs = tabs;
+    
+    $scope.isActive = function(location) {
+        return location === $location.path();
+    };
 });
 
 // configure our routes
 scotchApp.config(function($routeProvider) {
-    $routeProvider
-        .when('/', {
-            templateUrl : 'pages/home.html',
-            controller  : 'homeController'
-        });
+    $routeProvider.when('/', {
+        title: 'Welcome',
+        templateUrl: 'pages/home.html',
+        controller: 'homeController'
+    });
     var tabKeys = Object.keys(tabs);
     for (var i = 0; i < tabKeys.length; i++) {
         var key = tabKeys[i];
         $routeProvider.when('/' + key, {
-           templateUrl: 'pages/' + key + '.html',
-           controller: key + 'Controller'
+            title: tabs[key],
+            templateUrl: 'pages/' + key + '.html',
+            controller: key + 'Controller'
         });
     }
 });
+
+scotchApp.run(['$rootScope', function($rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        $rootScope.title = current.$$route.title;
+    });
+}]);
 
 // create the controller and inject Angular's $scope
 scotchApp.controller('homeController', function($scope) {
@@ -41,13 +52,16 @@ scotchApp.controller('homeController', function($scope) {
             age--;
         }
         return age;
-    })("1998/03/03");
+    })('1998/03/03');
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
 });
 
-scotchApp.controller('skillsController', function($scope) {
-   $scope.message = 'Skillz for Dayz'; 
+scotchApp.controller('skillsController', function($scope, $http) {
+    $scope.message = 'Skillz for Dayz';
+    $http.get('data/skills.json').then(function(res) {
+      $scope.skills = res.data;                
+    });
 });
 
 scotchApp.controller('achievementsController', function($scope) {

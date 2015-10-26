@@ -1,8 +1,19 @@
 <div class="row">
-    <div class="large-12 columns">
+    <div class="12 columns">
         <h1>Skills</h1>
     </div>
-    <div class="large-12 columns">
+    <div class="12 columns">
         <p>{{ message }}</p>
+    </div>
+</div>
+<div class="row" data-ng-repeat="(category, data) in skills">
+    <div class="12 columns">
+        <h2>{{ category }}</h2>
+    </div>
+    <div class="medium-6 columns" data-ng-repeat="skill in data">
+        <div class="panel">
+            <h4>{{ skill.name }}</h4>
+            <p>{{ skill.description }}</p>
+        </div>
     </div>
 </div>

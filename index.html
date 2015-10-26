@@ -6,7 +6,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>MingweiSamuel | Welcome</title>
+    <title data-ng-bind="'MingweiSamuel | ' + title">MingweiSamuel |</title>
     <meta name="description" content="Mingwei Samuel's Personal Website">
     <meta name="author" content="Mingwei Samuel">
 
@@ -27,7 +27,7 @@
 
     <!-- Icons
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/ico" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <!-- Scripts
@@ -51,7 +51,7 @@
         <section class="top-bar-section">
             <!-- Right Nav Section -->
             <ul class="right">
-                <li ng-repeat="(key, value) in tabs"><a href="#/{{ key }}">{{ value }}</a></div>
+                <li data-ng-class="{ active: isActive('/' + key)}" data-ng-repeat="(key, value) in tabs"><a href="#/{{ key }}">{{ value }}</a></li>
             </ul>
 
             <!-- Left Nav Section -->
