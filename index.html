@@ -28,9 +28,22 @@
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <!-- Modernizr
+        <!-- Scripts
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/fastclick.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.magellan.min.js"></script>
+        <script type="text/javascript">
+$.get('CNAME', function(data) {
+    if (window.location.href.indexOf(data) >= 0)
+        window.location.replace(data);
+});
+$(document).foundation();
+        </script>
     </head>
     <body>
         <div class="row">
@@ -43,12 +56,6 @@
         </div>
         
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/fastclick.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.magellan.min.js"></script>
-        <script type="text/javascript">
-$(document).foundation();
-        </script>
+        
     </body>
 </html>
