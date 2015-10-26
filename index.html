@@ -40,7 +40,7 @@
         <script type="text/javascript">
 $.get('CNAME', function(data) {
     data = data.trim();
-    if (window.location.hostname == data && window.location.pathname)
+    if (window.location.hostname === data && window.location.pathname.length > 1)
         window.location.replace('/');
 });
 $(document).foundation();
