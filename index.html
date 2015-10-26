@@ -39,8 +39,9 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.magellan.min.js"></script>
         <script type="text/javascript">
 $.get('CNAME', function(data) {
-    if (window.location.href.indexOf(data) >= 0)
-        window.location.replace(data);
+    data = data.trim();
+    if (window.location.hostname == data && window.location.pathname)
+        window.location.replace('/');
 });
 $(document).foundation();
         </script>
