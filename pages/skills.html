@@ -19,7 +19,7 @@
                 <div class="medium-4 columns medium-text-right">
                     <p>
                         <span data-ng-repeat="n in [2, 4, 6, 8, 10]" class="fa"
-                        data-ng-class="(skill.rating >= n) ? 'fa-star' : (skill.rating == n - 1) ? 'fa-star-half-o' : 'fa-star-o'"></span>
+                        data-ng-class="(skill.rating > n) ? 'fa-star' : (skill.rating == n) ? 'fa-star-half-o' : 'fa-star-o'"></span>
                     </p>
                 </div>
             </div>
