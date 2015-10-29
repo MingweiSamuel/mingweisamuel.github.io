@@ -1,0 +1,18 @@
+{
+    "Programming": [
+        {
+            "name": "Hover Vehicles OpenTTD Mod",
+            "description": "OpenTTD is a transportation logistics game. This mod, programmed in the NewGRF Meta Language (NML), adds hovering vehicles to the game. It has over 133,000 downloads.",
+            "link": "http://www.tt-forums.net/viewtopic.php?f=67&t=61161",
+            "thumb": "media/projects/hover-vehicles.png",
+            "crop": [0, 0, 0, 0]
+        },
+        {
+            "name": "CSGO.tips",
+            "description": "A website to help Counter-Strike: Global-Offensive (CSGO) players learn grenade throws. The site is made using skeleton.css, snap.svg, and custom JavaScript.",
+            "link": "http://www.csgo.tips/",
+            "thumb": "media/projects/csgo-tips.png",
+            "crop": [0, 0, 0, 0]
+        }
+    ]
+}

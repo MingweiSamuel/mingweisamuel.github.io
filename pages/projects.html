@@ -6,3 +6,23 @@
         <p>{{ message }}</p>
     </div>
 </div>
+<div class="row" data-ng-repeat="(category, data) in projects">
+    <div class="12 columns">
+        <h2>{{ category }}</h2>
+    </div>
+    <div class="12 columns" data-ng-repeat="project in data">
+        <div class="panel">
+            <div class="row">
+                <div class="medium-3 columns small-only-text-center" data-ng-class="{ 'medium-push-9': $odd }">
+                    <a class="th" href="{{ project.link }}">
+                        <img src="{{ project.thumb }}" alt="{{ project.name }}" />
+                    </a>
+                </div>
+                <div class="medium-9 columns" data-ng-class="{ 'medium-pull-3': $odd }">
+                    <h3>{{ project.name }}</h3>
+                    <p>{{ project.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

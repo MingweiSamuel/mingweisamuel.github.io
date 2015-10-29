@@ -68,8 +68,11 @@ scotchApp.controller('achievementsController', function($scope) {
     $scope.message = 'Look at all the stuff I\'ve done.';
 });
 
-scotchApp.controller('projectsController', function($scope) {
-    $scope.message = 'Look at all the stuff I\'ve worked on.';
+scotchApp.controller('projectsController', function($scope, $http) {
+    $scope.message = 'Look at all this cool stuff.';
+    $http.get('data/projects.json').then(function(res) {
+      $scope.projects = res.data;                
+    });
 });
 
 scotchApp.controller('photosController', function($scope) {
