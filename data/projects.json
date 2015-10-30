@@ -1,18 +1,28 @@
 {
     "Programming": [
         {
-            "name": "Hover Vehicles OpenTTD Mod",
+            "name": "Hover Vehicles for OpenTTD",
             "description": "OpenTTD is a transportation logistics game. This mod, programmed in the NewGRF Meta Language (NML), adds hovering vehicles to the game. It has over 133,000 downloads.",
             "link": "http://www.tt-forums.net/viewtopic.php?f=67&t=61161",
-            "thumb": "media/projects/hover-vehicles.png",
-            "crop": [0, 0, 0, 0]
+            "thumb": "media/projects/hover-vehicles.png"
         },
         {
             "name": "CSGO.tips",
             "description": "A website to help Counter-Strike: Global-Offensive (CSGO) players learn grenade throws. The site is made using skeleton.css, snap.svg, and custom JavaScript.",
             "link": "http://www.csgo.tips/",
-            "thumb": "media/projects/csgo-tips.png",
-            "crop": [0, 0, 0, 0]
+            "thumb": "media/projects/csgo-tips.png"
+        },
+        {
+            "name": "Hazzard's Gravestone Mod for Factorio",
+            "description": "A popular mod for the factory-building game Factorio. The mod adds gravestones to the game, allowing players to retain items when they die. The mod is programmed in Lua, using Factorio's modding API.",
+            "link": "http://www.factorioforums.com/forum/viewtopic.php?f=92&t=14107",
+            "thumb": "media/projects/gravestone.png"
+        },
+        {
+            "name": "Jankyscroll 2.0",
+            "description": "The next iteration of the jankyscroll franchise, Jankyscroll 2.0 makes your website's UX undeniably worse. Solutions like Modernizr do their best to help you adapt to all manner of devices, but jankyscroll elegantly resolves all issues. Performance will be just as terrible on a brand new, state-of-the-art machine as it was on your dad's old Compaq that caught fire that one time.",
+            "link": "http://zweig.co/jankyscroll/",
+            "thumb": "media/projects/jankyscroll.png"
         }
     ]
 }

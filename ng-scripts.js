@@ -5,7 +5,7 @@ var tabs = {
     'achievements': 'Achievements',
     'skills': 'Skills',
     'photos': 'Photo Gallery',
-    'contact': 'Contact Me'
+    'contact': 'Social'
 };
 
 scotchApp.controller('mainController', function($scope, $location) {
