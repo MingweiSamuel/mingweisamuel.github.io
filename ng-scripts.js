@@ -33,11 +33,11 @@ scotchApp.config(function($routeProvider) {
         title: 'Welcome',
         templateUrl: 'pages/home.html',
         controller: 'homeController'
-    });
-    
-    $routeProvider.when('/detail/:name', {
+    }).when('/detail/:name', {
         templateUrl: 'pages/detail.html',
         controller: 'detailController'
+    }).otherwise({
+        templateUrl: 'pages/unknown.html'
     });
     
     var tabKeys = Object.keys(tabs);
