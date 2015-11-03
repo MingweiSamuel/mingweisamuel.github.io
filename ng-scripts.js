@@ -2,9 +2,9 @@ var scotchApp = window.angular.module('scotchApp', ['ngRoute']);
 
 var tabs = {
     'projects': 'Projects',
-    'achievements': 'Achievements',
+    'awards': 'Awards',
+    'other': 'Other',
     'skills': 'Skills',
-    'photos': 'Photo Gallery',
     'contact': 'Social'
 };
 
