@@ -3,6 +3,12 @@
         {
             "name": "Java",
             "description": "I am \"fluent\" in Java. I have a strong understanding of Java's object oriented programming model, multithreading architechture, i/o frameworks, and just about everything else.",
+            "rating": 9,
+            "thumb": "media/skills/java-logo.jpg"
+        },
+        {
+            "name": "JavaScript",
+            "description": "There's some both terrible and wonderful about JavaScript. With it, I have created front-end webapps, backend webservers in Node.js, and everything inbetween.",
             "rating": 9
         },
         {
@@ -14,8 +20,13 @@
     "Music": [
         {
             "name": "Trumpet",
-            "description": "I play trumpet",
-            "rating": 6
+            "description": "I have played trumpet since 4th grade, and have experience in concert band, pep band, and musical settings.",
+            "rating": 7
+        },
+        {
+            "name": "Digital Sound Design and Music Production",
+            "description": "I took up digital music creation as a hobby. Using online tutorials, I have learned advanced sound design techniques, including subtractive, additive, and frequency-modulation synthesis." ,
+            "rating": 5
         }
     ]
 }

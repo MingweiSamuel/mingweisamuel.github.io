@@ -73,7 +73,6 @@ scotchApp.controller('homeController', function($scope) {
 });
 
 scotchApp.controller('skillsController', function($scope, $http) {
-    $scope.message = 'Skillz for Dayz';
     $http.get('data/skills.json').then(function(res) {
       $scope.skills = res.data;
     });
@@ -98,7 +97,7 @@ scotchApp.controller('otherController', function($scope) {
 });
 
 scotchApp.controller('contactController', function($scope) {
-    $scope.message = 'Contact us! JK. This is just a demo.';
+    $scope.message = 'Social media links and stuff';
 });
 
 scotchApp.controller('detailController', function($scope) {
