@@ -41,6 +41,11 @@
 </head>
 
 <body data-ng-controller="mainController">
+    <div data-alert class="alert-box warning" style="margin: 0px;">
+        This website is under construction! Check back soon for more content.
+        <a href class="close">&times;</a>
+    </div>
+
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <!-- title -->
@@ -72,6 +77,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/fastclick.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.topbar.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.alert.min.js"></script>
     <script type="text/javascript">
         //general scripts
         $.get('CNAME', function(data) {
