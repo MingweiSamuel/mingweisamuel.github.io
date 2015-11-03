@@ -37,6 +37,7 @@ scotchApp.config(function($routeProvider) {
         templateUrl: 'pages/detail.html',
         controller: 'detailController'
     }).otherwise({
+        title: "Unknown Page",
         templateUrl: 'pages/unknown.html'
     });
     
