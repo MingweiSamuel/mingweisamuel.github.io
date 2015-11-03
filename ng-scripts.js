@@ -1,4 +1,10 @@
-var scotchApp = window.angular.module('scotchApp', ['ngRoute']);
+var scotchApp = window.angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
+
+scotchApp.filter('parseDate', function() {
+    return function(str) {
+        return new Date(str);
+    };
+});
 
 var tabs = {
     'projects': 'Projects',
@@ -60,18 +66,21 @@ scotchApp.controller('homeController', function($scope) {
 scotchApp.controller('skillsController', function($scope, $http) {
     $scope.message = 'Skillz for Dayz';
     $http.get('data/skills.json').then(function(res) {
-      $scope.skills = res.data;                
+      $scope.skills = res.data;
     });
 });
 
-scotchApp.controller('awardsController', function($scope) {
-    $scope.message = 'Look at all the stuff I\'ve done.';
+scotchApp.controller('awardsController', function($scope, $http) {
+    $scope.awards = {};
+    $http.get('data/awards.json').then(function(res) {
+      $scope.awards = res.data;
+    });
 });
 
 scotchApp.controller('projectsController', function($scope, $http) {
-    $scope.message = 'Look at all this cool stuff.';
+    $scope.projects = {};
     $http.get('data/projects.json').then(function(res) {
-      $scope.projects = res.data;                
+      $scope.projects = res.data;
     });
 });
 

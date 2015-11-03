@@ -2,26 +2,37 @@
     "Programming": [
         {
             "name": "Hover Vehicles for OpenTTD",
-            "description": "OpenTTD is a transportation logistics game. This mod, programmed in the NewGRF Meta Language (NML), adds hovering vehicles to the game. It has over 133,000 downloads.",
+            "description": "OpenTTD is a transportation logistics game, and I (\"Hazzard\") created this mod to add hovering vehicles to it. I programmed the mod using the NewGRF Meta Language (NML) and it features 276 sprites of different trucks and cargoes hand-drawn by me. It currently has over 133,000 downloads and counting.",
             "link": "http://www.tt-forums.net/viewtopic.php?f=67&t=61161",
+            "date": "2012-05",
             "thumb": "media/projects/hover-vehicles.png"
         },
         {
             "name": "CSGO.tips",
-            "description": "A website to help Counter-Strike: Global-Offensive (CSGO) players learn grenade throws. The site is made using skeleton.css, snap.svg, and custom JavaScript.",
+            "description": "A website to help Counter-Strike: Global-Offensive (CSGO) players learn grenade throws. The website uses a sleek, mobile-first, single-page, adaptive design, allowing users to reference the site on a tablet or phone next to their computer. It is built with skeleton.css, snap.svg, and custom JavaScript routing.",
             "link": "http://www.csgo.tips/",
+            "date": "2015-06",
             "thumb": "media/projects/csgo-tips.png"
         },
         {
+            "name": "FreeSpritz",
+            "description": "FreeSpritz allows faster reading by eliminating saccades (eye movements). Our brains work much faster than our eyes can move to recognize words. FreeSpritz centers each word so that is it most recognizable. The average reading speed it around 300wpm, but with a little practice using FreeSpritz, 600wpm is easily achievable and comprehendable. I programmed FreeSpritz in Java using advanced multithreading techniques.",
+            "link": "https://github.com/MingweiSamuel/FreeSpritz",
+            "date": "2014-04",
+            "thumb": "media/projects/freespritz.png"
+        },
+        {
             "name": "Hazzard's Gravestone Mod for Factorio",
-            "description": "A popular mod for the factory-building game Factorio. The mod adds gravestones to the game, allowing players to retain items when they die. The mod is programmed in Lua, using Factorio's modding API.",
+            "description": "A popular mod for the indie factory-building game Factorio. The mod adds gravestones to the game, allowing players to retain items when they die. The mod is programmed in Lua, using Factorio's modding API.",
             "link": "http://www.factorioforums.com/forum/viewtopic.php?f=92&t=14107",
+            "date": "2015-07",
             "thumb": "media/projects/gravestone.png"
         },
         {
             "name": "Jankyscroll 2.0",
-            "description": "The next iteration of the jankyscroll franchise, Jankyscroll 2.0 makes your website's UX undeniably worse. Solutions like Modernizr do their best to help you adapt to all manner of devices, but jankyscroll elegantly resolves all issues. Performance will be just as terrible on a brand new, state-of-the-art machine as it was on your dad's old Compaq that caught fire that one time.",
+            "description": "The next iteration of the jankyscroll franchise, Jankyscroll 2.0 makes your website's UX undeniably worse. Solutions like Modernizr do their best to help you adapt to all manner of devices, but jankyscroll elegantly resolves all issues. Performance will be just as terrible on a brand new, state-of-the-art machine as it was on your dad's old Compaq that caught fire that one time. I programmed this with my good friend, Ben Zweig.",
             "link": "http://zweig.co/jankyscroll/",
+            "date": "2015-08",
             "thumb": "media/projects/jankyscroll.png"
         }
     ]

@@ -1,0 +1,18 @@
+{
+    "Academic": [
+        {
+            "name": "Hover Vehicles for OpenTTD",
+            "description": "OpenTTD is a transportation logistics game, and I (\"Hazzard\") created this mod to add hovering vehicles to it. I programmed the mod using the NewGRF Meta Language (NML) and it features 276 sprites of different trucks and cargoes hand-drawn by me. It currently has over 133,000 downloads and counting.",
+            "date": "2012-05",
+            "thumb": "media/projects/hover-vehicles.png"
+        }
+    ],
+    "Athletic": [
+        {
+            "name": "Hover Vehicles for OpenTTD",
+            "description": "OpenTTD is a transportation logistics game, and I (\"Hazzard\") created this mod to add hovering vehicles to it. I programmed the mod using the NewGRF Meta Language (NML) and it features 276 sprites of different trucks and cargoes hand-drawn by me. It currently has over 133,000 downloads and counting.",
+            "date": "2012-05",
+            "thumb": "media/projects/hover-vehicles.png"
+        }
+    ]
+}
