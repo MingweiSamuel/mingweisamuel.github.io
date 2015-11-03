@@ -64,7 +64,7 @@ scotchApp.controller('skillsController', function($scope, $http) {
     });
 });
 
-scotchApp.controller('achievementsController', function($scope) {
+scotchApp.controller('awardsController', function($scope) {
     $scope.message = 'Look at all the stuff I\'ve done.';
 });
 
@@ -75,8 +75,8 @@ scotchApp.controller('projectsController', function($scope, $http) {
     });
 });
 
-scotchApp.controller('photosController', function($scope) {
-    $scope.message = 'Pictures of stuff go here.';
+scotchApp.controller('otherController', function($scope) {
+    $scope.message = 'Other stuff here';
 });
 
 scotchApp.controller('contactController', function($scope) {
