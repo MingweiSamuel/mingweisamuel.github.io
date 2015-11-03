@@ -1,3 +1,7 @@
+---
+#rendered
+---
+
 var scotchApp = window.angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
 
 scotchApp.filter('parseDate', function() {
@@ -72,24 +76,16 @@ scotchApp.controller('homeController', function($scope) {
     $scope.message = 'Everyone come and see how good I look!';
 });
 
-scotchApp.controller('skillsController', function($scope, $http) {
-    $http.get('data/skills.json').then(function(res) {
-      $scope.skills = res.data;
-    });
+scotchApp.controller('skillsController', function($scope) {
+    $scope.skills = {{ site.data.skills | jsonify }};
 });
 
-scotchApp.controller('awardsController', function($scope, $http) {
-    $scope.awards = {};
-    $http.get('data/awards.json').then(function(res) {
-      $scope.awards = res.data;
-    });
+scotchApp.controller('awardsController', function($scope) {
+    $scope.awards = {{ site.data.awards | jsonify }};
 });
 
-scotchApp.controller('projectsController', function($scope, $http) {
-    $scope.projects = {};
-    $http.get('data/projects.json').then(function(res) {
-      $scope.projects = res.data;
-    });
+scotchApp.controller('projectsController', function($scope) {
+    $scope.projects = {{ site.data.projects | jsonify }};
 });
 
 scotchApp.controller('otherController', function($scope) {
