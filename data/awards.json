@@ -1,18 +1,29 @@
 {
     "Academic": [
         {
-            "name": "Hover Vehicles for OpenTTD",
-            "description": "OpenTTD is a transportation logistics game, and I (\"Hazzard\") created this mod to add hovering vehicles to it. I programmed the mod using the NewGRF Meta Language (NML) and it features 276 sprites of different trucks and cargoes hand-drawn by me. It currently has over 133,000 downloads and counting.",
-            "date": "2012-05",
-            "thumb": "media/projects/hover-vehicles.png"
+            "name": "Nation Merit Scholarship Finalist",
+            "description": "National Merit Scholarship Finalist.",
+            "date": "2015-09",
+            "thumb": "media/awards/piedmont-post_merit-scholar.jpg"
+        },
+        {
+            "name": "Piedmont High School Honor Society",
+            "description": "I am in the PHS Honor Society.",
+            "date": "2015-02",
+            "thumb": "media/awards/pusd_honor-society.jpg"
         }
     ],
     "Athletic": [
         {
-            "name": "Hover Vehicles for OpenTTD",
-            "description": "OpenTTD is a transportation logistics game, and I (\"Hazzard\") created this mod to add hovering vehicles to it. I programmed the mod using the NewGRF Meta Language (NML) and it features 276 sprites of different trucks and cargoes hand-drawn by me. It currently has over 133,000 downloads and counting.",
-            "date": "2012-05",
-            "thumb": "media/projects/hover-vehicles.png"
+            "name": "Track Varsity Letter",
+            "description": "Participated on the Varsity Track team.",
+            "thumb": "media/awards/sport_track-2014.jpg"
+        },
+        {
+            "name": "China N. California Human Commonwealth Games 1500m First Place",
+            "description": "",
+            "date": "",
+            "thumb": "media/awards/piedmont-post_chinese-track.jpg"
         }
     ]
 }

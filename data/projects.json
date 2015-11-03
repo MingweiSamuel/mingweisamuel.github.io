@@ -34,6 +34,13 @@
             "link": "http://zweig.co/jankyscroll/",
             "date": "2015-08",
             "thumb": "media/projects/jankyscroll.png"
+        },
+        {
+            "name": "www.MingweiSamuel.com",
+            "description": "Wow, how meta. I made this website using AngularJs, Foundation, SASS, Jekyll, and Github Pages. Click to see the source code.",
+            "link": "https://github.com/MingweiSamuel/mingweisamuel.github.io",
+            "date": "2015-11",
+            "thumb": "media/me.jpg"
         }
     ]
 }

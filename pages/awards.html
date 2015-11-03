@@ -3,7 +3,7 @@
         <h1>Awards and Achievements</h1>
     </div>
     <div class="large-12 columns">
-        <p>All the rewards I've received.</p>
+        <p></p>
     </div>
 </div>
 <div class="row" data-ng-repeat="(category, data) in awards">
@@ -14,12 +14,12 @@
         <div class="panel">
             <div class="row">
                 <div class="medium-3 columns small-only-text-center" data-ng-class="{ 'medium-push-9': $odd }">
-                    <a class="th" href="{{ award.link }}">
+                    <a class="th" href="{{ award.thumb }}" style="max-height: 200px; overflow: hidden;">
                         <img data-ng-src="{{ award.thumb }}" alt="{{ award.name }}" />
                     </a>
                 </div>
                 <div class="medium-9 columns" data-ng-class="{ 'medium-pull-3': $odd }">
-                    <h3><a href="{{ award.link }}">{{ award.name }}</a>
+                    <h3><a href="{{ award.thumb }}">{{ award.name }}</a>
                     <h4 data-ng-if="award.date">{{ award.date | parseDate | date:'MMMM yyyy':'UTC' }}</h4></h3>
                     <p>{{ award.description }}</p>
                 </div>

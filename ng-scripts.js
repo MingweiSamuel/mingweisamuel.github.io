@@ -30,6 +30,12 @@ scotchApp.config(function($routeProvider) {
         templateUrl: 'pages/home.html',
         controller: 'homeController'
     });
+    
+    $routeProvider.when('/detail/:name', {
+        templateUrl: 'pages/detail.html',
+        controller: 'detailController'
+    });
+    
     var tabKeys = Object.keys(tabs);
     for (var i = 0; i < tabKeys.length; i++) {
         var key = tabKeys[i];
@@ -41,9 +47,12 @@ scotchApp.config(function($routeProvider) {
     }
 });
 
-scotchApp.run(['$rootScope', function($rootScope) {
+scotchApp.run(['$location', '$rootScope', '$routeParams', function($location, $rootScope, $routeParams) {
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-        $rootScope.title = current.$$route.title;
+        if (current.$$route.title)
+            $rootScope.title = current.$$route.title;
+        else
+            $rootScope.title = $routeParams.name;
     });
 }]);
 
@@ -90,4 +99,8 @@ scotchApp.controller('otherController', function($scope) {
 
 scotchApp.controller('contactController', function($scope) {
     $scope.message = 'Contact us! JK. This is just a demo.';
+});
+
+scotchApp.controller('detailController', function($scope) {
+    
 });
