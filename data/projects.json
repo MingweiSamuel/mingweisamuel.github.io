@@ -16,7 +16,7 @@
         },
         {
             "name": "FreeSpritz",
-            "description": "FreeSpritz allows faster reading by eliminating saccades (eye movements). Our brains work much faster than our eyes can move to recognize words. FreeSpritz centers each word so that is it most recognizable. The average reading speed it around 300wpm, but with a little practice using FreeSpritz, 600wpm is easily achievable and comprehendable. I programmed FreeSpritz in Java using advanced multithreading techniques.",
+            "description": "FreeSpritz allows faster reading by eliminating saccades (eye movements). Our brains work much faster than our eyes can move to recognize words. FreeSpritz centers each word so that is it most recognizable. The average reading speed is around 300wpm, but with a little practice using FreeSpritz, 600wpm is easily achievable and comprehendable. I programmed FreeSpritz in Java using advanced multithreading techniques.",
             "link": "https://github.com/MingweiSamuel/FreeSpritz",
             "date": "2014-04",
             "thumb": "media/projects/freespritz.png"
