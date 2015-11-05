@@ -42,5 +42,21 @@
             "date": "2015-11",
             "thumb": "media/me.jpg"
         }
+    ],
+    "3D Printing": [
+        {
+            "name": "Blenheim Palace",
+            "description": "A scale model of the Blenheim Palace in Oxfordshire England. The palace has been a set for many movies, incuding Gulliver's Travels (2010) and Hamlet (1996).",
+            "link": "http://www.thingiverse.com/thing:1090204",
+            "date": "2015-10",
+            "thumb": "media/projects/blenheim.jpg"
+        },
+        {
+            "name": "3D Printer Raspberry Pi Camera",
+            "description": "The 3D Printing Club wanted a way to monitor the 3D printer and create timelapses, so we bought a Raspberry Pi computer and camera addon. We then designed and printed a mount for the Pi's camera.",
+            "link": "http://www.thingiverse.com/thing:297806",
+            "date": "2014-04",
+            "thumb": "media/projects/rpi-camera.jpg"
+        }
     ]
 }

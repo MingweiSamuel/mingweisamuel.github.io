@@ -8,7 +8,11 @@ scotchApp.filter('parseDate', function() {
     return function(str) {
         return new Date(str);
     };
-});
+}).filter('to_trusted', ['$sce', function($sce) {
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+}]);
 
 var tabs = {
     'projects': 'Projects',
@@ -90,7 +94,7 @@ scotchApp.controller('projectsController', function($scope) {
 });
 
 scotchApp.controller('otherController', function($scope) {
-    $scope.message = 'Other stuff here';
+    $scope.projects = {{ site.data.other | jsonify }};
 });
 
 scotchApp.controller('contactController', function($scope) {
