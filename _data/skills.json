@@ -18,7 +18,7 @@
         },
         {
             "name": "GNU+Linux",
-            "description": "Linux is great, and it used on two-thirds of all internet servers. I own and run a small headless linux server as a hobby. I have also worked with Amazon Web Services (AWS) to automate server deployment, manage clusters, and balance loads.",
+            "description": "Linux is great, and it is used on two-thirds of all internet servers. I own and run a small headless linux server as a hobby. I have also worked with Amazon Web Services (AWS) to automate server deployment, manage clusters, and balance loads.",
             "rating": 9
         },
         {
@@ -46,7 +46,7 @@
         {
             "name": "Trumpet",
             "description": "I have played trumpet since 4th grade, and have experience in concert band, pep band, and musical settings.",
-            "rating": 7
+            "rating": 6
         },
         {
             "name": "Digital Sound Design and Music Production",
