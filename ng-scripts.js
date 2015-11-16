@@ -18,8 +18,8 @@ var tabs = {
     'projects': 'Projects',
     'awards': 'Awards',
     'other': 'Other',
-    'skills': 'Skills',
-    'contact': 'Social'
+    'skills': 'Skills'
+//    'contact': 'Social'
 };
 
 scotchApp.controller('mainController', function($scope, $location) {
