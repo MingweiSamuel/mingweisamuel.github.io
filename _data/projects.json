@@ -58,5 +58,14 @@
             "date": "2014-04",
             "thumb": "media/projects/rpi-camera.jpg"
         }
+    ],
+    "Other": [
+        {
+            "name": "Spreadsheet Projects",
+            "description": "I automated a few spreadsheets to keep track of music on YouTube. They are color-coded by genre, and list views, likes, dislikes, and other information.",
+            "link": "https://goo.gl/TOiVQm",
+            "date": "2015-08",
+            "thumb": "media/projects/spreadsheet.jpg"
+        }
     ]
 }
